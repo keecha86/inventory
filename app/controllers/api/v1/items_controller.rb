@@ -42,7 +42,7 @@ class Api::V1::ItemsController < ApplicationController
   end
 
   def delete_all_items
-    items = Item.where(id: params[:items].pluck('id'))
+    items = Item.where(id: params[:items])
     if items.delete_all
       render json: items, status: :ok
     end
