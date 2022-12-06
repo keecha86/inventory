@@ -49,5 +49,3 @@ function Items(props) {
 }
 
 export default Items;
-
-//This is a test//
